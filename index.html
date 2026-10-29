@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VARNIXO IT — Your Vision. Our Creativity.</title>
+  <meta name="description" content="VARNIXO IT helps brands stand out with professional graphic design, creative video editing, Facebook page management, and social media content creation.">
+  <meta name="theme-color" content="#151615">
+  <meta property="og:title" content="VARNIXO IT — Your Vision. Our Creativity.">
+  <meta property="og:description" content="Professional graphic design, creative video editing, Facebook page management, and social media content creation.">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon: a square crop of your logo's V mark -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- Fonts (Google Fonts). If offline, the site falls back to system fonts. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Scroll progress bar + cursor glow (decorative) -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <!-- Your official logo, used exactly as provided (file: images/logo.png).
+           The wrapper only crops the empty space around it using CSS; the image itself is untouched. -->
+      <a class="brand" href="#home" aria-label="VARNIXO IT — back to top">
+        <span class="logo-crop"><img src="images/logo.png" alt="VARNIXO IT logo" width="2000" height="2000"></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Main navigation">
+        <a href="#home" data-nav>Home</a>
+        <a href="#services" data-nav>Services</a>
+        <a href="#videos" data-nav>Videos</a>
+        <a href="#portfolio" data-nav>Portfolio</a>
+        <a href="#process" data-nav>Process</a>
+        <a href="#contact" data-nav>Contact</a>
+        <a class="btn btn-primary btn-sm nav-cta" href="https://wa.me/8801410032423" target="_blank" rel="noopener" data-whatsapp>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 16.9L2 22l5.2-1.2A11 11 0 1 0 20.5 3.5Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3 .7.8-2.9-.2-.3a9 9 0 1 1 7.3 4Zm5-6.7c-.3-.1-1.6-.8-1.9-.9s-.5-.1-.7.1-.8.9-.9 1.1-.3.2-.6.1a7.4 7.4 0 0 1-3.7-3.2c-.3-.5.3-.5.8-1.5.1-.2 0-.3 0-.5l-.9-2.1c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4.1c1.7.7 2.4.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/></svg>
+          WhatsApp Us
+        </a>
+      </nav>
+
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="home">
+      <canvas class="hero-canvas" id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="glow glow-lime" aria-hidden="true"></div>
+      <div class="glow glow-blue" aria-hidden="true"></div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow hero-anim" style="--d:.05s"><i></i>Creative Digital Studio</span>
+          <h1 class="hero-title">
+            <span class="line hero-anim" style="--d:.15s">Your Vision.</span>
+            <span class="line hero-anim" style="--d:.3s"><span class="grad-text">Our Creativity.</span></span>
+          </h1>
+          <p class="hero-desc hero-anim" style="--d:.45s">We help brands stand out with professional graphic design, creative video editing, Facebook page management, and social media content creation.</p>
+
+          <div class="hero-actions hero-anim" style="--d:.6s">
+            <a class="btn btn-primary" href="#videos">
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10.5-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5Z"/></svg>
+              Watch Our Videos
+            </a>
+            <a class="btn btn-outline" href="https://wa.me/8801410032423" target="_blank" rel="noopener" data-whatsapp>
+              Chat on WhatsApp
+              <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
+
+          <ul class="hero-tags hero-anim" style="--d:.75s" aria-label="Our services">
+            <li>Graphic Design</li><li>Video Editing</li><li>Facebook Pages</li><li>Social Content</li>
+          </ul>
+        </div>
+
+        <!-- Phone mockup showing one of your real promo videos -->
+        <div class="hero-visual hero-anim" style="--d:.5s">
+          <div class="phone-wrap" id="phoneWrap">
+            <div class="phone">
+              <div class="phone-notch" aria-hidden="true"></div>
+              <div class="phone-screen">
+                <img src="images/poster-promo-2.jpg" alt="Preview of the VARNIXO IT promotional video" width="540" height="960">
+                <button class="phone-play" type="button" data-play-video="promo-2" aria-label="Play promotional video">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.9l10.5-6.5a1 1 0 0 0 0-1.8L9.5 4.6A1 1 0 0 0 8 5.5Z"/></svg>
+                </button>
+              </div>
+            </div>
+            <span class="float-chip chip-1">Graphic Design</span>
+            <span class="float-chip chip-2">Video Editing</span>
+            <span class="float-chip chip-3">Page Management</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#services" aria-label="Scroll to services"><span></span></a>
+    </section>
+
+    <!-- ===================== MARQUEE ===================== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Graphic Design</span><b>✦</b><span>Video Editing</span><b>✦</b><span>Facebook Page Management</span><b>✦</b><span>Social Media Content</span><b>✦</b>
+        <span>Graphic Design</span><b>✦</b><span>Video Editing</span><b>✦</b><span>Facebook Page Management</span><b>✦</b><span>Social Media Content</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- ===================== SERVICES ===================== -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow"><i></i>What We Do</span>
+          <h2>Four services. <span class="grad-text">One creative partner.</span></h2>
+          <p>Everything your brand needs to look sharp, stay active, and be remembered online.</p>
+        </header>
+
+        <div class="services-grid">
+          <article class="card service reveal" data-spotlight>
+            <span class="service-num">01</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 3 8l9 5 9-5-9-5Z"/><path d="m3 13 9 5 9-5"/><path d="m3 17.5 9 5 9-5" opacity=".5"/></svg>
+            </div>
+            <h3>Professional Graphic Design</h3>
+            <p>Posters, social media creatives, banners and brand visuals designed to make your business look sharp and memorable.</p>
+            <a class="card-link" href="#portfolio">See designs <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card service reveal" data-spotlight style="--rd:.08s">
+            <span class="service-num">02</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="m10 9.5 5 2.5-5 2.5v-5Z"/></svg>
+            </div>
+            <h3>Creative Video Editing</h3>
+            <p>Promo videos, reels and short-form edits with clean cuts, motion and sound that keep viewers watching.</p>
+            <a class="card-link" href="#videos">Watch videos <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card service reveal" data-spotlight style="--rd:.16s">
+            <span class="service-num">03</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8.5c0-.3.2-.5.5-.5H14Z"/></svg>
+            </div>
+            <h3>Facebook Page Management</h3>
+            <p>Consistent posting, a polished page presence and audience interaction, handled for you so you can focus on your business.</p>
+            <a class="card-link" href="#contact">Get started <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="card service reveal" data-spotlight style="--rd:.24s">
+            <span class="service-num">04</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="8" height="8" rx="2"/><rect x="13" y="3" width="8" height="8" rx="2"/><rect x="3" y="13" width="8" height="8" rx="2"/><path d="M17 13v8M13 17h8"/></svg>
+            </div>
+            <h3>Social Media Content Creation</h3>
+            <p>Ready-to-post designs, videos and captions planned around your brand voice, built to engage your audience.</p>
+            <a class="card-link" href="#contact">Talk to us <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== VIDEO GALLERY ===================== -->
+    <section class="section section-alt" id="videos">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow"><i></i>Promotional Videos</span>
+          <h2>Press play. <span class="grad-text">See it in motion.</span></h2>
+          <p>Watch our promotional videos right here on the page, no leaving the site.</p>
+        </header>
+
+        <div class="video-gallery reveal">
+          <!-- Main player. JavaScript fills this in from the VIDEOS list in script.js -->
+          <div class="player-col">
+            <div class="player-frame">
+              <div class="player-stage" id="playerStage" aria-live="polite"></div>
+            </div>
+          </div>
+
+          <div class="video-side">
+            <div class="now-playing">
+              <span class="np-label">Now showing</span>
+              <h3 id="npTitle">—</h3>
+              <p id="npDesc"></p>
+            </div>
+            <div class="playlist" id="playlist" role="list" aria-label="Video playlist"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PORTFOLIO ===================== -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow"><i></i>Portfolio</span>
+          <h2>Creative work, <span class="grad-text">crafted with care.</span></h2>
+          <p>Graphic designs, posters, promotional videos and creative projects. Tap an item to view it.</p>
+        </header>
+
+        <div class="filters reveal" id="filters" role="group" aria-label="Filter portfolio"></div>
+        <div class="work-grid" id="workGrid"></div>
+
+        <p class="note" id="portfolioNote" hidden>
+          Items marked <strong>Placeholder</strong> are empty slots waiting for your own designs. See the README / script.js to add them.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================== PROCESS ===================== -->
+    <section class="section section-alt" id="process">
+      <div class="container">
+        <header class="section-head reveal">
+          <span class="eyebrow"><i></i>How It Works</span>
+          <h2>From idea to <span class="grad-text">ready to post.</span></h2>
+          <p>A simple, clear way of working together.</p>
+        </header>
+
+        <ol class="steps">
+          <li class="step reveal"><span>01</span><h3>Tell us your idea</h3><p>Message us on WhatsApp with what you need and who it's for.</p></li>
+          <li class="step reveal" style="--rd:.08s"><span>02</span><h3>We plan the creative</h3><p>We shape the concept, style and content around your brand.</p></li>
+          <li class="step reveal" style="--rd:.16s"><span>03</span><h3>We design &amp; edit</h3><p>Your visuals and videos are created and refined with you.</p></li>
+          <li class="step reveal" style="--rd:.24s"><span>04</span><h3>You go live</h3><p>Receive final files, or let us publish and manage your page.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section contact" id="contact">
+      <div class="glow glow-lime" aria-hidden="true"></div>
+      <div class="glow glow-blue" aria-hidden="true"></div>
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-copy">
+            <span class="eyebrow"><i></i>Contact</span>
+            <h2>Let's build something <span class="grad-text">extraordinary.</span></h2>
+            <p>Message us today to get started. The fastest way to reach VARNIXO IT is WhatsApp.</p>
+
+            <div class="contact-buttons">
+              <a class="btn btn-primary btn-lg" href="https://wa.me/8801410032423" target="_blank" rel="noopener" data-whatsapp>
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 16.9L2 22l5.2-1.2A11 11 0 1 0 20.5 3.5Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3 .7.8-2.9-.2-.3a9 9 0 1 1 7.3 4Zm5-6.7c-.3-.1-1.6-.8-1.9-.9s-.5-.1-.7.1-.8.9-.9 1.1-.3.2-.6.1a7.4 7.4 0 0 1-3.7-3.2c-.3-.5.3-.5.8-1.5.1-.2 0-.3 0-.5l-.9-2.1c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4.1c1.7.7 2.4.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/></svg>
+                WhatsApp: +8801410-032423
+              </a>
+              <!-- Facebook link: add your real Page URL in script.js (CONFIG.facebookUrl) -->
+              <a class="btn btn-blue btn-lg" href="#contact" data-facebook>
+                <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H7v4h3v7h4v-7h3l1-4h-4V8.5c0-.3.2-.5.5-.5H14Z"/></svg>
+                Facebook: VARNIXO IT
+              </a>
+            </div>
+            <p class="small-note" id="fbNote">Our Facebook Page link will be added soon.</p>
+          </div>
+
+          <!-- Quick message form: opens WhatsApp with your message pre-filled. No server needed. -->
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Send a quick message</h3>
+            <label>Your name
+              <input type="text" name="name" placeholder="Your name" autocomplete="name">
+            </label>
+            <label>Service you need
+              <select name="service">
+                <option>Professional Graphic Design</option>
+                <option>Creative Video Editing</option>
+                <option>Facebook Page Management</option>
+                <option>Social Media Content Creation</option>
+                <option>Something else</option>
+              </select>
+            </label>
+            <label>Your message
+              <textarea name="message" rows="4" placeholder="Tell us about your project…"></textarea>
+            </label>
+            <button class="btn btn-primary btn-block" type="submit">Send via WhatsApp</button>
+            <p class="small-note">This opens WhatsApp with your message ready to send.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand" href="#home" aria-label="VARNIXO IT — back to top">
+        <span class="logo-crop"><img src="images/logo.png" alt="VARNIXO IT logo" width="2000" height="2000" loading="lazy"></span>
+      </a>
+      <nav class="footer-nav" aria-label="Footer navigation">
+        <a href="#services">Services</a>
+        <a href="#videos">Videos</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="copyright">© <span id="year">2026</span> VARNIXO IT. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp button -->
+  <a class="wa-float" href="https://wa.me/8801410032423" target="_blank" rel="noopener" data-whatsapp aria-label="Chat with VARNIXO IT on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11 11 0 0 0 3.2 16.9L2 22l5.2-1.2A11 11 0 1 0 20.5 3.5Zm-8.5 17a9 9 0 0 1-4.6-1.3l-.3-.2-3 .7.8-2.9-.2-.3a9 9 0 1 1 7.3 4Zm5-6.7c-.3-.1-1.6-.8-1.9-.9s-.5-.1-.7.1-.8.9-.9 1.1-.3.2-.6.1a7.4 7.4 0 0 1-3.7-3.2c-.3-.5.3-.5.8-1.5.1-.2 0-.3 0-.5l-.9-2.1c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4.1c1.7.7 2.4.8 3.2.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/></svg>
+  </a>
+
+  <!-- Image lightbox for portfolio items -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Portfolio preview">
+    <button class="lb-close" id="lbClose" aria-label="Close preview">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">‹</button>
+    <figure class="lb-figure">
+      <img id="lbImg" src="" alt="">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next">›</button>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <noscript>
+    <p style="text-align:center;padding:24px;color:#fff;background:#151615">
+      Please enable JavaScript to see our video gallery and portfolio, or message us on
+      <a href="https://wa.me/8801410032423" style="color:#a3e802">WhatsApp</a>.
+    </p>
+  </noscript>
+
+  <script src="script.js"></script>
+</body>
+</html>
